@@ -1,0 +1,77 @@
+# Thư mục và file build
+/target/
+/out/
+
+# Cấu hình hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Các file và thư mục của IDE
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+
+### VS Code ###
+.vscode/
+
+# Maven và Gradle
+.mvn/
+mvnw
+mvnw.cmd
+.gradle/
+build/
+
+# Thông tin về nhật ký ứng dụng
+logs/
+*.log
+
+# File cấu hình môi trường
+.env
+
+# Tệp tạm thời của hệ thống
+*.swp
+*.swo
+*.tmp
+*.bak
+*.backup
+*.orig
+*.rej
+
+# File cấu hình riêng tư (database, auth) và các file cục bộ
+application-*.yml
+application-*.properties
+!application.yml
+!application.properties
+
+# Các thư mục và file khác cần bỏ qua
+node_modules/
+*.jar
+*.war
+*.class
+
+# File cụ thể cho hệ điều hành Windows
+*.exe
+*.dll
+*.bat
+*.cmd
+
+# File cụ thể cho hệ điều hành MacOS
+*.app
+
+# File cụ thể cho hệ điều hành Linux
+*.out
+
+# Tạm thời cho khóa SSH và bảo mật
+*.pem
+*.key
+*.crt
+*.der
+*.pfx
+*.p12

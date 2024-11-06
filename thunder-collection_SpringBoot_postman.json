@@ -1,0 +1,149 @@
+{
+    "info": {
+        "_postman_id": "6367ca15-ae52-4280-9279-0559a5d92000",
+        "name": "SpringBoot",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "POST Product",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8080/api/products",
+                    "path": [
+                        "api",
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"name\": \"Product A\",\n    \"price\": 100.0\n}"
+                }
+            }
+        },
+        {
+            "name": "GET Product by Id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/api/products/1",
+                    "path": [
+                        "api",
+                        "products",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        },
+        {
+            "name": "GET Products",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:8080/api/products",
+                    "path": [
+                        "api",
+                        "products"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        },
+        {
+            "name": "PUT Product",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "http://localhost:8080/api/products/1",
+                    "path": [
+                        "api",
+                        "products",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n    \"name\": \"Updated Product A\",\n    \"price\": 120.0\n}"
+                }
+            }
+        },
+        {
+            "name": "DELETE Product by Id",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:8080/api/products/1",
+                    "path": [
+                        "api",
+                        "products",
+                        "1"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                }
+            }
+        },
+        {
+            "name": "POST Product batch",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:8080/api/products/batch",
+                    "path": [
+                        "api",
+                        "products",
+                        "batch"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "[\r\n  {\r\n    \"name\": \"Alford\",\r\n    \"price\": 46016\r\n  },\r\n  {\r\n    \"name\": \"Davis\",\r\n    \"price\": 1330\r\n  },\r\n  {\r\n    \"name\": \"Cole\",\r\n    \"price\": 20237\r\n  },\r\n  {\r\n    \"name\": \"Sherri\",\r\n    \"price\": 81039\r\n  },\r\n  {\r\n    \"name\": \"Gaines\",\r\n    \"price\": 47881\r\n  },\r\n  {\r\n    \"name\": \"Thornton\",\r\n    \"price\": 62472\r\n  },\r\n  {\r\n    \"name\": \"Simon\",\r\n    \"price\": 65993\r\n  },\r\n  {\r\n    \"name\": \"Mollie\",\r\n    \"price\": 46601\r\n  },\r\n  {\r\n    \"name\": \"Rosa\",\r\n    \"price\": 60415\r\n  },\r\n  {\r\n    \"name\": \"Rosalinda\",\r\n    \"price\": 12234\r\n  },\r\n  {\r\n    \"name\": \"Rachelle\",\r\n    \"price\": 53480\r\n  },\r\n  {\r\n    \"name\": \"Washington\",\r\n    \"price\": 68273\r\n  },\r\n  {\r\n    \"name\": \"Ferrell\",\r\n    \"price\": 6301\r\n  },\r\n  {\r\n    \"name\": \"Oneal\",\r\n    \"price\": 83672\r\n  },\r\n  {\r\n    \"name\": \"Guzman\",\r\n    \"price\": 28192\r\n  },\r\n  {\r\n    \"name\": \"Cooley\",\r\n    \"price\": 55157\r\n  },\r\n  {\r\n    \"name\": \"Elliott\",\r\n    \"price\": 68571\r\n  },\r\n  {\r\n    \"name\": \"Rutledge\",\r\n    \"price\": 50519\r\n  },\r\n  {\r\n    \"name\": \"Jamie\",\r\n    \"price\": 14670\r\n  },\r\n  {\r\n    \"name\": \"Crystal\",\r\n    \"price\": 37232\r\n  },\r\n  {\r\n    \"name\": \"Celia\",\r\n    \"price\": 30598\r\n  },\r\n  {\r\n    \"name\": \"Michael\",\r\n    \"price\": 54511\r\n  },\r\n  {\r\n    \"name\": \"Penelope\",\r\n    \"price\": 30801\r\n  },\r\n  {\r\n    \"name\": \"Leila\",\r\n    \"price\": 88002\r\n  },\r\n  {\r\n    \"name\": \"Britt\",\r\n    \"price\": 30774\r\n  },\r\n  {\r\n    \"name\": \"Susana\",\r\n    \"price\": 21324\r\n  },\r\n  {\r\n    \"name\": \"Richardson\",\r\n    \"price\": 96436\r\n  },\r\n  {\r\n    \"name\": \"Glenna\",\r\n    \"price\": 95599\r\n  },\r\n  {\r\n    \"name\": \"Sarah\",\r\n    \"price\": 6886\r\n  },\r\n  {\r\n    \"name\": \"Mcdonald\",\r\n    \"price\": 97318\r\n  },\r\n  {\r\n    \"name\": \"Consuelo\",\r\n    \"price\": 32579\r\n  },\r\n  {\r\n    \"name\": \"Hancock\",\r\n    \"price\": 17216\r\n  },\r\n  {\r\n    \"name\": \"Vaughan\",\r\n    \"price\": 88760\r\n  },\r\n  {\r\n    \"name\": \"Genevieve\",\r\n    \"price\": 76042\r\n  },\r\n  {\r\n    \"name\": \"Marla\",\r\n    \"price\": 83313\r\n  },\r\n  {\r\n    \"name\": \"Polly\",\r\n    \"price\": 79500\r\n  },\r\n  {\r\n    \"name\": \"Angie\",\r\n    \"price\": 40445\r\n  },\r\n  {\r\n    \"name\": \"Humphrey\",\r\n    \"price\": 27014\r\n  },\r\n  {\r\n    \"name\": \"Brooke\",\r\n    \"price\": 63853\r\n  },\r\n  {\r\n    \"name\": \"Patrica\",\r\n    \"price\": 1750\r\n  },\r\n  {\r\n    \"name\": \"Meadows\",\r\n    \"price\": 31916\r\n  },\r\n  {\r\n    \"name\": \"Byrd\",\r\n    \"price\": 46106\r\n  },\r\n  {\r\n    \"name\": \"Sophia\",\r\n    \"price\": 31175\r\n  },\r\n  {\r\n    \"name\": \"Elaine\",\r\n    \"price\": 27042\r\n  },\r\n  {\r\n    \"name\": \"Blair\",\r\n    \"price\": 16069\r\n  },\r\n  {\r\n    \"name\": \"Garrison\",\r\n    \"price\": 63499\r\n  },\r\n  {\r\n    \"name\": \"Hardin\",\r\n    \"price\": 40194\r\n  },\r\n  {\r\n    \"name\": \"Shari\",\r\n    \"price\": 58842\r\n  },\r\n  {\r\n    \"name\": \"Margaret\",\r\n    \"price\": 20537\r\n  },\r\n  {\r\n    \"name\": \"Sara\",\r\n    \"price\": 85746\r\n  },\r\n  {\r\n    \"name\": \"Alisha\",\r\n    \"price\": 83730\r\n  },\r\n  {\r\n    \"name\": \"Dianne\",\r\n    \"price\": 52791\r\n  },\r\n  {\r\n    \"name\": \"Emily\",\r\n    \"price\": 79032\r\n  },\r\n  {\r\n    \"name\": \"Christian\",\r\n    \"price\": 66496\r\n  },\r\n  {\r\n    \"name\": \"Althea\",\r\n    \"price\": 55169\r\n  },\r\n  {\r\n    \"name\": \"Faulkner\",\r\n    \"price\": 19399\r\n  },\r\n  {\r\n    \"name\": \"Keri\",\r\n    \"price\": 58147\r\n  },\r\n  {\r\n    \"name\": \"Wiggins\",\r\n    \"price\": 90098\r\n  },\r\n  {\r\n    \"name\": \"Ola\",\r\n    \"price\": 95557\r\n  },\r\n  {\r\n    \"name\": \"Bonnie\",\r\n    \"price\": 35647\r\n  },\r\n  {\r\n    \"name\": \"Hudson\",\r\n    \"price\": 79266\r\n  },\r\n  {\r\n    \"name\": \"Joyner\",\r\n    \"price\": 29924\r\n  },\r\n  {\r\n    \"name\": \"Hayes\",\r\n    \"price\": 95833\r\n  },\r\n  {\r\n    \"name\": \"Day\",\r\n    \"price\": 86265\r\n  },\r\n  {\r\n    \"name\": \"Benton\",\r\n    \"price\": 63892\r\n  },\r\n  {\r\n    \"name\": \"Debbie\",\r\n    \"price\": 83320\r\n  },\r\n  {\r\n    \"name\": \"Boyd\",\r\n    \"price\": 49847\r\n  },\r\n  {\r\n    \"name\": \"Angelia\",\r\n    \"price\": 63531\r\n  },\r\n  {\r\n    \"name\": \"Rowland\",\r\n    \"price\": 96135\r\n  },\r\n  {\r\n    \"name\": \"Ward\",\r\n    \"price\": 85562\r\n  },\r\n  {\r\n    \"name\": \"Helen\",\r\n    \"price\": 29484\r\n  },\r\n  {\r\n    \"name\": \"Lolita\",\r\n    \"price\": 42294\r\n  },\r\n  {\r\n    \"name\": \"Browning\",\r\n    \"price\": 33444\r\n  },\r\n  {\r\n    \"name\": \"Thompson\",\r\n    \"price\": 6232\r\n  },\r\n  {\r\n    \"name\": \"Lorene\",\r\n    \"price\": 5381\r\n  },\r\n  {\r\n    \"name\": \"Rosella\",\r\n    \"price\": 56295\r\n  },\r\n  {\r\n    \"name\": \"Mercedes\",\r\n    \"price\": 34582\r\n  },\r\n  {\r\n    \"name\": \"Valdez\",\r\n    \"price\": 49543\r\n  },\r\n  {\r\n    \"name\": \"Blevins\",\r\n    \"price\": 36430\r\n  },\r\n  {\r\n    \"name\": \"Oneill\",\r\n    \"price\": 83854\r\n  },\r\n  {\r\n    \"name\": \"Rae\",\r\n    \"price\": 7675\r\n  },\r\n  {\r\n    \"name\": \"Delgado\",\r\n    \"price\": 22451\r\n  },\r\n  {\r\n    \"name\": \"Chelsea\",\r\n    \"price\": 90263\r\n  },\r\n  {\r\n    \"name\": \"Espinoza\",\r\n    \"price\": 11148\r\n  },\r\n  {\r\n    \"name\": \"Bullock\",\r\n    \"price\": 56961\r\n  },\r\n  {\r\n    \"name\": \"Padilla\",\r\n    \"price\": 99172\r\n  },\r\n  {\r\n    \"name\": \"Mclean\",\r\n    \"price\": 85374\r\n  },\r\n  {\r\n    \"name\": \"Fitzgerald\",\r\n    \"price\": 83740\r\n  },\r\n  {\r\n    \"name\": \"Eunice\",\r\n    \"price\": 21047\r\n  },\r\n  {\r\n    \"name\": \"Adams\",\r\n    \"price\": 24146\r\n  },\r\n  {\r\n    \"name\": \"Amber\",\r\n    \"price\": 25787\r\n  },\r\n  {\r\n    \"name\": \"Tanisha\",\r\n    \"price\": 97594\r\n  },\r\n  {\r\n    \"name\": \"Cathleen\",\r\n    \"price\": 55044\r\n  },\r\n  {\r\n    \"name\": \"Jefferson\",\r\n    \"price\": 6361\r\n  },\r\n  {\r\n    \"name\": \"Lesley\",\r\n    \"price\": 99849\r\n  },\r\n  {\r\n    \"name\": \"Jody\",\r\n    \"price\": 91743\r\n  },\r\n  {\r\n    \"name\": \"Audra\",\r\n    \"price\": 30532\r\n  },\r\n  {\r\n    \"name\": \"Harris\",\r\n    \"price\": 28030\r\n  },\r\n  {\r\n    \"name\": \"Bethany\",\r\n    \"price\": 86425\r\n  },\r\n  {\r\n    \"name\": \"Myrna\",\r\n    \"price\": 76456\r\n  }\r\n]"
+                }
+            }
+        }
+    ]
+}

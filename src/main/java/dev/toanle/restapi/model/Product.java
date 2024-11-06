@@ -1,20 +1,29 @@
 package dev.toanle.restapi.model;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "products")
 public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String name;
+
     private Double price;
 
+    // Constructors, getters, and setters
     public Product() {
     }
 
-    public Product(Long id, String name, Double price) {
-        this.id = id;
+    public Product(String name, Double price) {
         this.name = name;
         this.price = price;
     }
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }

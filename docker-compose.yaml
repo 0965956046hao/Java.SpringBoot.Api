@@ -1,0 +1,21 @@
+services:
+  springbootapi:
+    container_name: springbootapi
+    build:
+      context: .
+      args:
+        CONTAINER_PORT: ${CONTAINER_PORT}
+    image: springbootapi:0.0.1
+    restart: unless-stopped
+    env_file:
+      - ${ENV_FILE}
+    expose:
+      - ${CONTAINER_PORT}
+    ports:
+      - ${HOST_PORT}:${CONTAINER_PORT}
+    networks:
+      - test-network
+
+networks:
+  test-network:
+    external: true
